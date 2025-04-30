@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista produktów</title>
+    <link rel="stylesheet" href="lista.css">
+</head>
+<body>
+    <h1>Lista produktów</h1>
+    <div id="kontener"></div>
+    <ul>
+        <li id="p1"><p >chleb   <button onclick="usun1()">usuń</button></p></li>
+        <li id="p2"><p id="p2">mleko   <button onclick="usun2()">usuń</button></p></li>
+        <li id="p3"><p id="p3">sok   <button onclick="usun3()">usuń</button></p></li>
+    </ul>
+    <script>
+        
+        
+       
+        const doUsuniecia1 = document.getElementById("p1"); 
+        const doUsuniecia2 = document.getElementById("p2"); 
+        const doUsuniecia3 = document.getElementById("p3"); 
+        function usun1() {
+            doUsuniecia1.remove();
+                }
+                function usun2() {
+            doUsuniecia2.remove();
+                }
+                function usun3() {
+            doUsuniecia3.remove();
+                }
+    </script>
+	
+   
+</body>
+</html>
+
+
+
+
+
