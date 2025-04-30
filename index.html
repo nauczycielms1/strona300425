@@ -1,39 +1,100 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="pl-PL">
 <head>
-    <title>Lista produktów</title>
-    <link rel="stylesheet" href="lista.css">
+<title>Sklep "FASOLKA"</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css" />
+
 </head>
-<body>
-    <h1>Lista produktów</h1>
-    <div id="kontener"></div>
-    <ul>
-        <li id="p1"><p >chleb   <button onclick="usun1()">usuń</button></p></li>
-        <li id="p2"><p id="p2">mleko   <button onclick="usun2()">usuń</button></p></li>
-        <li id="p3"><p id="p3">sok   <button onclick="usun3()">usuń</button></p></li>
-    </ul>
-    <script>
-        
-        
-       
-        const doUsuniecia1 = document.getElementById("p1"); 
-        const doUsuniecia2 = document.getElementById("p2"); 
-        const doUsuniecia3 = document.getElementById("p3"); 
-        function usun1() {
-            doUsuniecia1.remove();
-                }
-                function usun2() {
-            doUsuniecia2.remove();
-                }
-                function usun3() {
-            doUsuniecia3.remove();
-                }
-    </script>
-	
-   
+<body >
+<header id="nag_s">
+<h1>Sklep "FASOLKA"</h1>
+<nav >
+
+</nav>
+</header>
+<div id="d">
+<main>
+<h1>Warzywa</h1>
+<form name="formularz1"  >
+<table>
+<tr><td>Marchewka 4,50 zł</td><td><input type="number" class="ilosc" id="marchewka">kg
+
+</td></tr>
+<tr><td>Pietruszka 2,80 zł</td><td><input type="number" class="ilosc" id="pietruszka">kg
+
+</td></tr>
+<tr><td>Cebula 3,90 zł</td><td><input type="number" class="ilosc" id="cebula">kg
+
+</td></tr>
+<tr><td>Pomidory 4,30 zł </td><td><input type="number" class="ilosc" id="pomidory">kg
+
+</td></tr>
+<tr><td>Ziemniaki 1,90 zł</td><td><input type="number" class="ilosc" id="ziemniaki">kg
+
+</td></tr>
+<tr><td>Ogórki 4,20 zł</td><td><input type="number" class="ilosc" id="ogorki">kg
+
+</td></tr>
+
+</table>
+</form>
+</main>
+<div id="grafika">
+<div id="obraz">
+<img src="obraz.png" alt="systemy" />
+</div>
+<div>
+<input type="reset" value="Wyczyść"class="bat" id="czyszczenie"/>
+<input type="button" value="Przelicz" class="bat" id="przelicz"/></div>
+<div id="wynik"></div>
+</div>
+
+<aside>
+<article id="opis">
+<header>
+<h2>Owoce</h2>
+<form name="formularz1"  >
+<table>
+<tr><td>Jabłka 3,50 zł</td><td><input type="number" class="ilosc" id="jablka">kg
+
+</td></tr>
+<tr><td>Gruszki 5,80 zł</td><td><input type="number" class="ilosc" id="gruszki">kg
+
+</td></tr>
+<tr><td>Śliwki 3,90 zł</td><td><input type="number" class="ilosc" id="sliwki">kg
+
+</td></tr>
+<tr><td>Brzoskwinie 4,30 zł </td><td><input type="number" class="ilosc" id="brzoskwinie">kg
+
+</td></tr>
+<tr><td>Morele 2,90 zł</td><td><input type="number" class="ilosc" id="morele">kg
+
+</td></tr>
+<tr><td>Winogrono 4,20 zł</td><td><input type="number" class="ilosc" id="winogrono">kg
+
+</td>
+</table>
+</form>
+
+
+</header>
+<h2>
+</h2>
+
+
+</article>
+
+
+
+</aside>
+</div>
+<footer>
+Stronę internetową opracował: imię i nazwisko
+</footer>
+<script src="przelicz.js"></script>
 </body>
 </html>
-
 
 
 
